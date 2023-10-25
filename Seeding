@@ -1,0 +1,4 @@
+def seeding(n: int) -> None:
+    if n>0:
+        print("* " * n)
+        seeding(n-1)
