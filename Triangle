@@ -1,0 +1,6 @@
+def triangle(n,i=None) ->None:
+    if not i:
+        i = 1
+    if i<=n:
+        print((str(i)+" ")*i)
+        triangle(n,i+1)
