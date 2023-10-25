@@ -1,0 +1,9 @@
+def nTriangle(n,i=None,ans=None) ->None:
+    if i is None:
+        i = 1
+        ans = str()
+    if i<=n:
+        ans = ans + str(i) + " "
+        print(ans)
+        nTriangle(n,i+1,ans)
+    
