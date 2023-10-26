@@ -1,0 +1,17 @@
+def nBinaryTriangle(n,i=None,ans=None) -> None:
+    if ans is None:
+        ans = str()
+        i = 1
+    if i<=n:
+        if i%2!=0:
+            x = "1 "
+            x+= ans
+            ans = x
+        else:
+            x = "0 "
+            x+= ans
+            ans = x
+        print(ans)
+        nBinaryTriangle(n,i+1,ans)
+
+    
