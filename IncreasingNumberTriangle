@@ -1,0 +1,12 @@
+def nNumberTriangle(n,i=None,counter=None) -> None:
+    if i is None:
+        i=1
+        counter = 1
+    if counter<=n:
+        ans=str()
+        for j in range(counter):
+            ans+=str(i)+" "
+            i+=1
+        print(ans)
+        nNumberTriangle(n,i,counter+1)
+
