@@ -1,0 +1,7 @@
+def alphaTriangle(n,ans=None):
+    if ans is None:
+        ans = str()
+    if n>0:
+        ans+=chr(65 + (n-1))+" "
+        print(ans)
+        alphaTriangle(n-1,ans)
