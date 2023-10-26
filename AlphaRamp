@@ -1,0 +1,8 @@
+def alphaRamp(n,counter=None,asciival=None) -> None:
+    if counter is None:
+        counter = 1
+        asciival=65
+    if counter<=n:
+        print((chr(asciival)+" ")*counter)
+        alphaRamp(n,counter+1,asciival+1)
+
