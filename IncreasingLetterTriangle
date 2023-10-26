@@ -1,0 +1,13 @@
+def nLetterTriangle(n,i=None,counter=None) -> None:
+    if i is None:
+        i=1
+        counter = 1
+    if counter<=n:
+        ans=str()
+        val = 65
+        for j in range(counter):
+            ans+=chr(65+j)+" "
+            val+=j
+            i+=1
+        print(ans)
+        nLetterTriangle(n,i,counter+1)
